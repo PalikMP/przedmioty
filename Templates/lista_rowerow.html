@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta http-equiv="X-UA-Conpatible" content="ie=edge">
+    <title>Lista rowerow</title>
+</head>
+<body>
+    <p>Lista Rowerów</p>
+
+{% for r in lista_rowerow %}
+    <section class="g-mb-10">
+      <div class="container">
+        <div class="row">
+                  <div class="d-flex align-items-center justify-content-sm-between g-mb-5">
+                    <h2 class="g-font-weight-300 g-mr-10">{{r.kogo}}, {{r.opis}}</h2>
+                  </div>
+        </div>
+    </section>
+{% endfor %}
+</body>
+
+</html>
